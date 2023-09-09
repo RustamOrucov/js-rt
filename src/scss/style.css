@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body section {
+  height: 100vh;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section .text {
+  margin-top: 10px;
+  color: #fff;
+}
+body section .text span {
+  color: tomato;
+}
+body section .seat {
+  background-color: #444451;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  border-radius: 5px;
+}
+body section .seat:nth-of-type(2) {
+  margin-right: 20px;
+}
+body section .seat:nth-last-of-type(3) {
+  margin-right: 20px;
+}
+body section .seat.selected {
+  background-color: #fff;
+}
+body section .seat.reserved {
+  background-color: tomato;
+}
+body section .seat:not(.reserved):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+body section .info {
+  background-color: rgb(27, 27, 27);
+  padding: 10px;
+  display: flex;
+}
+body section .info li {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  margin: 0 10px;
+}
+body section .movie-list {
+  margin: 20px 0;
+}
+body section .container .screen {
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.7);
+}
+body section .container .row {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
